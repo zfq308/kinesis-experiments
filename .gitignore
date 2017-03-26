@@ -1,0 +1,66 @@
+# git-ls-files --others --exclude-from=.git/info/exclude
+# Lines that start with '#' are comments.
+# For a project mostly in C, the following would be a good set of
+# exclude patterns (uncomment them if you want to use them):
+# *.[oa]
+# *~
+
+# random temporary files
+*~
+\#*\#
+.\#*
+
+# intellij idea files.
+.idea
+*.iml
+
+# intellij scala plugin folder.
+.scala_dependencies
+*.ipr
+*.iws
+
+# eclipse project files.
+.classpath
+.project
+.settings
+
+# eclipse maven target directory (other than target)
+.cache
+.eclipse
+.classes
+
+# generated maven/build directories.
+build
+target
+.target
+
+# temporary directories.
+tmp
+temp
+
+# generated files from lift build.
+lib_managed
+src_managed
+project/boot
+lift_proto.*.db
+
+# mac 'desktop service store' file
+.DS_Store
+
+# generated class files
+*.class
+*.pyc
+
+# meld (diff tool) files
+*.orig
+*.BACKUP.*
+*.BASE.*
+*.REMOTE.*
+
+# maven release backups
+*.releaseBackup
+*.csv
+
+# ansible
+ansible/dxansible
+ansible/library
